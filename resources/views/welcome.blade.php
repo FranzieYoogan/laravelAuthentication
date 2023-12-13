@@ -12,9 +12,29 @@
         <title>Laravel</title>
 
         <!-- Fonts -->
+
+        <style>
+            body {
+
+        background: url('/img/background/wallpaper.png');
+
+                }
+
+
+        </style>
       
     </head>
     <body>
+
+        <script>
+
+            window.onload = (event) => {
+          
+              document.getElementsByTagName('a')[1].style.borderBottom = '2px solid green'
+          
+            };
+            
+            </script>
 
         <div>
 
@@ -34,3 +54,5 @@
       
     </body>
 </html>
+
+<section>
