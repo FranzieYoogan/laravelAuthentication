@@ -17,7 +17,7 @@
             body {
 
         background: url('/img/background/wallpaper.png');
-
+        background-size: 100%;
                 }
 
 
@@ -51,7 +51,7 @@
 
         </main>
 
-      
+      @include('layouts.footer')
     </body>
 </html>
 

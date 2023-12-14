@@ -1,6 +1,4 @@
 
-
-
 <script>
 
   window.onload = (event) => {
@@ -10,6 +8,8 @@
   };
   
   </script>
+
+
 
 
 <head>
@@ -26,7 +26,7 @@
 
 
 <section class="formContainer">
-<form method="POST" action="/dashboard" class="formStyle max-w-sm mx-auto">
+<form id="formAnimation" onmouseover="formEventOn()" onmouseout="formEventOut()" method="POST" action="/dashboard" class="formStyle formAnimation max-w-sm mx-auto">
   @csrf
     <div class="mb-5">
       <label for="userName" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your userName</label>
@@ -50,4 +50,26 @@
 
 </section>
 
+<script>
 
+  function formEventOn() {
+
+      document.getElementById('formAnimation').classList.remove('formAnimation');
+
+
+
+  }
+
+
+  function formEventOut() {
+
+document.getElementById('formAnimation').classList.add('formAnimation');
+
+
+
+}
+
+
+</script>
+
+  @include('layouts.footer')

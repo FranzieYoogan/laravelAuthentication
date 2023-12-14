@@ -6,9 +6,10 @@
 
 .formContainer {
 
+    margin-top: 5% !important;
     display: flex;
     justify-content: center;
-    align-items: center;
+align-items: center;
     margin-top: 10em;
     
 }
@@ -16,7 +17,7 @@
 body {
 
     background: url('/img/background/wallpaper.png');
-
+    background-size: 100%;
 }
 
 .formStyle {
@@ -30,10 +31,53 @@ body {
     background-color: green;
     box-shadow: 2px 2px 2px black;
     color: white;
+    position: relative;
+
+
+    z-index: 1;
 }
 
-.inputStyle {
+.formAnimation {
 
-
-
+    animation-name: formMoving;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
 }
+
+@keyframes  formMoving {
+
+
+    0% {
+
+        transform: translate(0%, 0% );
+    }
+
+    20% {
+
+        transform: translate(-30%, 15%);
+ 
+    }
+
+    40% {
+
+        transform: translate( 0%, 0%);
+ 
+    }
+
+    60% {
+
+        transform: translate(-30%, -15%);
+ 
+    }
+
+    
+    100% {
+
+        transform: translate(0%, 0%);
+
+    }
+ 
+
+    
+}
+

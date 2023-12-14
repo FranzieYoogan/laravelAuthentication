@@ -1,0 +1,44 @@
+footer {
+
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    border-top: 4px solid green;
+}
+
+.textStyle {
+
+    color: green !important;
+
+    transition: 1s;
+    text-decoration: none !important;
+}
+
+.linkText{
+
+    border-bottom: 2px solid green;
+}
+
+.linkText:hover {
+    color: rgb(128, 237, 128) !important;
+    border-bottom: 2px solid transparent;
+}
+
+.socialsStyle {
+
+    color: green;
+
+}
+
+.socialsStyle:hover {
+
+    color: rgb(128, 237, 128) !important;
+}
+
+
+
+span {
+
+    color: green !important;
+  
+}
