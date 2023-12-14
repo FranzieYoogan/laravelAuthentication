@@ -11,17 +11,18 @@ footer {
     color: green !important;
 
     transition: 1s;
-    text-decoration: none !important;
+
 }
 
 .linkText{
 
     border-bottom: 2px solid green;
+    text-decoration: none !important;
 }
 
 .linkText:hover {
     color: rgb(128, 237, 128) !important;
-    border-bottom: 2px solid transparent;
+    border-bottom: 2px solid transparent !important;
 }
 
 .socialsStyle {
